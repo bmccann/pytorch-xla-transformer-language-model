@@ -1,7 +1,7 @@
 # pytorch-xla-transformer-language-model
 This repository is an open source test case for [pytorch/xla](https://github.com/pytorch/xla) that runs a minimal training loop for a [Transformer](https://arxiv.org/abs/1706.03762) language model on a single TPU device.
 
-This tests the compilation of the model by XLA, and is not intended to be used for training a reasonable language model.
+This code is intended to be used as reference for testing the compilation of the model by XLA, and is not intended to be used for training a reasonable language model. During initial runs, this code triggered recompilation far too often, but these issues have now been resolved. 
 
 Depends on Docker image `gcr.io/tpu-pytorch/xla:r0.1`.
 
